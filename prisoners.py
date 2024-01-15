@@ -32,3 +32,6 @@ success_count = 0
 for i in range(num_trials):
     if simulate_prisoners_problem(num_prisoners) == 1:
         success_count += 1
+
+print(f"100명의 죄수가 각자의 번호를 알아맞추는 문제에서 {num_trials}번 실행시 성공할 확률은 **{success_count / num_trials:.4f}**입니다.")
+
