@@ -25,3 +25,10 @@ def simulate_prisoners_problem(num_prisoners):
 
     # 자신의 번호를 찾은 죄수의 확률을 반환합니다.
     return count / num_prisoners
+
+num_prisoners = 100
+num_trials = 1000
+success_count = 0
+for i in range(num_trials):
+    if simulate_prisoners_problem(num_prisoners) == 1:
+        success_count += 1
